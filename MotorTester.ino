@@ -1,18 +1,18 @@
 //L293D
 //Motor A
-const int motorPin1  = 1;  // Pin 14 of L293
-const int motorPin2  = 2;  // Pin 10 of L293
+const int motorPin1  = 2;  // Pin 14 of L293
+const int motorPin2  = 3;  // Pin 10 of L293
 //Motor B
-const int motorPin3  = 3; // Pin  7 of L293
-const int motorPin4  = 4;  // Pin  2 of L293
+const int motorPin3  = 5; // Pin  7 of L293
+const int motorPin4  = 6;  // Pin  2 of L293
 
-//L293D
+//L293D #2 STILL WIRING
 //Motor A
-const int motorPin5  = 5;  // Pin 14 of L293
-const int motorPin6  = 6;  // Pin 10 of L293
+const int motorPin5  = 8;  // Pin 14 of L293 #2
+const int motorPin6  = 9;  // Pin 10 of L293 #2
 //Motor B
-const int motorPin7  = 7; // Pin  7 of L293
-const int motorPin8  = 8;  // Pin  2 of L293
+const int motorPin7  = 11; // Pin  7 of L293 #2
+const int motorPin8  = 12;  // Pin  2 of L293 #2
 //This will run only one time.
 
 void setup(){
@@ -25,7 +25,12 @@ void setup(){
     
     //Motor Control - Motor A: motorPin1,motorpin2 & Motor B: motorpin3,motorpin4
 
-    //This code  will turn Motor A clockwise for 2 sec.
+ 
+}
+
+
+void loop(){
+      //This code  will turn Motor A clockwise for 2 sec.
     digitalWrite(motorPin1, HIGH);
     digitalWrite(motorPin2, LOW);
     digitalWrite(motorPin3, LOW);
@@ -56,11 +61,5 @@ void setup(){
     digitalWrite(motorPin2, LOW);
     digitalWrite(motorPin3, LOW);
     digitalWrite(motorPin4, LOW);
-  
-}
-
-
-void loop(){
-  
 
 }
